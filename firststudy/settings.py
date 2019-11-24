@@ -56,8 +56,8 @@ ROOT_URLCONF = 'firststudy.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'blogapp/templates')]
-        ,
+        #'DIRS': [os.path.join(BASE_DIR, 'blogapp/templates')]
+        'DIRS': [os.path.join(BASE_DIR, 'firststudy/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
