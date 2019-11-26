@@ -2,24 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8b22c04-d736-45cc-a591-ee83ef00d855" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/blogapp/migrations/0006_delete_comment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogapp/migrations/0007_comment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogapp/migrations/0008_user.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogapp/templates/blogMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/templates/blogMain.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogapp/templates/createBlog.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/templates/createBlog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogapp/templates/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/templates/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/templates/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/templates/signin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firststudy/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/firststudy/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firststudy/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/firststudy/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firststudy/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/firststudy/templates/base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -51,11 +63,11 @@
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/blogapp/static/css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/blogapp" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/blogapp/static/css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -110,7 +122,8 @@
       <workItem from="1574598992050" duration="4439000" />
       <workItem from="1574604188978" duration="1082000" />
       <workItem from="1574662132457" duration="483000" />
-      <workItem from="1574662620959" duration="2337000" />
+      <workItem from="1574662620959" duration="3173000" />
+      <workItem from="1574732094405" duration="9776000" />
     </task>
     <servers />
   </component>

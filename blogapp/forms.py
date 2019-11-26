@@ -1,5 +1,5 @@
 from django import forms
-from .models import Blog, Comment
+from .models import Blog, Comment, User
 from ckeditor_uploader.widgets import CKEditorUploadingWidget
 
 class CreateBlog(forms.ModelForm):
@@ -28,4 +28,21 @@ class BlogCommentForm(forms.ModelForm):
         fields = ['comment_textfield']
         widgets = {
             'comment_textfield': forms.Textarea(attrs={'class': 'form-control', 'rows': 4, 'cols': 40})
+        }
+
+class UserRegisterForm(forms.ModelForm):
+    class Meta:
+        model = User
+
+        fields = ['user_id', 'user_pw','user_name']
+        widgets = {
+            'user_id': forms.TextInput(
+                attrs={'class': 'form-control', 'placeholder': '아이디를 입력하세요.'}
+            ),
+            'user_pw': forms.PasswordInput(
+                attrs={'class': 'form-control', 'style': 'width: 100%', 'placeholder': '비밀번를 입력하세요.'}
+            ),
+            'user_name': forms.TextInput(
+                attrs={'class': 'form-control', 'style': 'width: 100%', 'placeholder': '이름을 입력하세요.'}
+            ),
         }
