@@ -30,3 +30,8 @@ UUIDField	GUID (UUID)를 저장하는 필드
 ##### 새항목 추가해줄ㄱ때 
 ₩₩₩ makemigrations
 migrate --fake ₩₩₩
+
+#### 유저모델
+- 기존의 AbstractBaseUser 모델 사용하는 방식
+  기본 사용자 모델에서는, first name, last name, email, password, username, is_staff, is_admin 의 필드를 제공
+- 모델변형

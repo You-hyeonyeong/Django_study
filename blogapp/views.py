@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .forms import CreateBlog
 from .models import Blog, Comment
 from .forms import BlogCommentForm
+from django.contrib.auth.models import User #User 모델을 사용하기위해 선언해준다.
+from django.contrib import auth
 
 
 # Create your views here.
@@ -76,35 +78,24 @@ def oauth(request):
     return redirect('blogMain')
 
 
+def signup(request):
+    if request.method == "POST":
+        user = User.objects.create_user(
+            userid=request.POST["userid"], password=request.POST["password"], username=request.POST["username"])
+        auth.login(request, user)
+        return redirect(request, 'signup.html')
+    return render(request, 'signup.html')
+
+
 def signin(request):
-    # if request.method == 'POST':
-    #     # Data bounded form인스턴스 생성
-    #     login_form = LoginForm(request.POST)
-    #     # 유효성 검증에 성공할 경우
-    #     if login_form.is_valid():
-    #         # form으로부터 username, password값을 가져옴
-    #         username = login_form.cleaned_data['user_id']
-    #         password = login_form.cleaned_data['user_pw']
-    #
-    #         # 가져온 username과 password에 해당하는 User가 있는지 판단한다
-    #         # 존재할경우 user변수에는 User인스턴스가 할당되며,
-    #         # 존재하지 않으면 None이 할당된다
-    #         user = authenticate(
-    #             username=username,
-    #             password=password
-    #         )
-    #         # 인증에 성공했을 경우
-    #         if user:
-    #             # Django의 auth앱에서 제공하는 login함수를 실행해 앞으로의 요청/응답에 세션을 유지한다
-    #             django_login(request, user)
-    #             # Post목록 화면으로 이동
-    #             return redirect('post:post_list')
-    #         # 인증에 실패하면 login_form에 non_field_error를 추가한다
-    #         login_form.add_error(None, '아이디 또는 비밀번호가 올바르지 않습니다')
-    # else:
-    #     login_form = LoginForm()
-    # context = {
-    #     'login_form': login_form,
-    # }
-    #
-    return render(request, 'signin.html')
+    if request.method == "POST":
+        userid = request.POST['userid']
+        password = request.POST['password']
+        user = auth.authenticate(request, userid=userid, password= password)
+        if user is not None:
+            auth.login(request, user)
+            return redirect('blogMain.html')
+        else:
+            return render(request, 'signin.html', {'error' : '올바르지 않은 이름 패스워드입니다.'})
+    else:
+        return render(request, 'signin.html')

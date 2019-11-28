@@ -18,9 +18,3 @@ class Comment(models.Model):
     comment_user = models.TextField(max_length=20)
     comment_thumbnail_url = models.TextField(max_length=300)
     comment_textfield = models.TextField()
-
-class User(models.Model):
-    user_id = models.TextField()
-    user_pw = models.TextField()
-    user_name = models.TextField()
-    

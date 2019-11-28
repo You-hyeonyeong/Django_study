@@ -8,6 +8,7 @@
         <hr>
         <br><br>
         <form method="POST" enctype="multipart/form-data">
+            <!-- 사용자의 토큰을 통해 CSRF웹 보안공격을 막기 위해 장고에서 제공하는 기능 -->
             {% csrf_token %}
             {{ form.media }}
             {{ form.as_p }}
