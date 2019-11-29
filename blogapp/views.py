@@ -81,21 +81,29 @@ def oauth(request):
 def signup(request):
     if request.method == "POST":
         user = User.objects.create_user(
-            userid=request.POST["userid"], password=request.POST["password"], username=request.POST["username"])
+            email=request.POST["email"], password=request.POST["password"], username=request.POST["username"])
         auth.login(request, user)
-        return redirect(request, 'signup.html')
+        return redirect('complete.html')
     return render(request, 'signup.html')
 
 
 def signin(request):
     if request.method == "POST":
-        userid = request.POST['userid']
+        email = request.POST['email']
         password = request.POST['password']
-        user = auth.authenticate(request, userid=userid, password= password)
+        user = auth.authenticate(request, email=email, password= password)
         if user is not None:
             auth.login(request, user)
             return redirect('blogMain.html')
         else:
+            print("ddddd")
             return render(request, 'signin.html', {'error' : '올바르지 않은 이름 패스워드입니다.'})
     else:
-        return render(request, 'signin.html')
+        return render(request, 'signup.html')
+
+
+def survey(request):
+    return render(request, 'survey.html')
+
+def complete(request):
+    return render(request, 'complete.html')

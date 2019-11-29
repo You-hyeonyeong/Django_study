@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8b22c04-d736-45cc-a591-ee83ef00d855" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogapp/templates/signup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogapp/templates/complete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogapp/templates/survey.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogapp/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogapp/migrations/0008_user.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogapp/templates/createBlog.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/templates/createBlog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogapp/templates/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/templates/signin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/templates/signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firststudy/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/firststudy/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/firststudy/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/firststudy/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,8 +39,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -51,8 +48,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Tx77ubQTuf4nZmvoatac51nP3u" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -128,6 +128,9 @@
       <workItem from="1574662620959" duration="3173000" />
       <workItem from="1574732094405" duration="12746000" />
       <workItem from="1574904184839" duration="6233000" />
+      <workItem from="1574995072083" duration="719000" />
+      <workItem from="1574995795982" duration="365000" />
+      <workItem from="1574996163297" duration="4671000" />
     </task>
     <servers />
   </component>
@@ -146,5 +149,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

@@ -30,6 +30,7 @@ urlpatterns = [
     path('oauth/', blogapp.views.oauth, name='oauth'),
     path('signup/', blogapp.views.signup, name='signup'),
     path('signin/', blogapp.views.signin, name='signin'),
+    path('survey/', blogapp.views.survey, name='survey'),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
