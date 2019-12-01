@@ -3,22 +3,20 @@
 
 {% block content %}
     <div class="container">
-        <h1>로그인</h1>
-        <form method="POST" action="{% url 'signin'%}">
+        <h1 >로그인</h1>
+        <form class=form-signin method="POST" action="{% url 'signin'%}">
             {% csrf_token %}
             <br>
             UserEmail :
             <br>
-            <input name="email" type="text">
+            <input name="username" type="text">
             <br>
             Password :
             <br>
             <input name="password" type="password">
             <br><br>
             <input type="submit" class="btn btn-primary" value="확인">
-            <input type="submit" onclick="location.href='{% url 'signup.html' %}'" class="btn btn-secondary" value="회원가입">
-
-
+            <button class="btn btn-primary" type="button" onclick="'#'">회원가입</button>
         </form>
     </div>
 

@@ -133,3 +133,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # 사용자들이 올리는 파일들은 'media'로 분류가 되며, 'media' 루트를 설정
 MEDIA_URL = '/media/'
 MEDIA_ROOT = 'media/'
+
+LOGIN_REDIRECT_URL = '/profile'
