@@ -1,9 +1,12 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .forms import CreateBlog
-from .models import Blog, Comment
+from .models import Blog, Comment, Question
 from .forms import BlogCommentForm
 from django.contrib.auth.models import User #User 모델을 사용하기위해 선언해준다.
 from django.contrib import auth
+from django.http import HttpResponse
+from django.template import loader
+
 
 
 # Create your views here.
@@ -105,7 +108,24 @@ def signin(request):
 
 
 def survey(request):
+    #latest_question_list = Question.objects.order_by('-pub_date')[:5]
+    #output = ', '.join([q.question_text for q in latest_question_list])
     return render(request, 'survey.html')
 
 def complete(request):
     return render(request, 'complete.html')
+
+def detail(request, question_id):
+    try:
+        question = Question.objects.get(pk=question_id)
+    except Question.DoesNotExist:
+        raise get_object_or_404("Question does not exist")
+    return render(request, 'detail.html', {'question': question})
+    return HttpResponse("You're looking at question %s." % question_id)
+
+def results(request, question_id):
+    response = "You're looking at the results of question %s."
+    return HttpResponse(response % question_id)
+
+def vote(request, question_id):
+    return HttpResponse("You're voting on question %s." % question_id)

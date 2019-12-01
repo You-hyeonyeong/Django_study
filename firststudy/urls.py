@@ -20,6 +20,7 @@ from django.conf.urls import include
 from django.conf import settings
 from django.conf.urls.static import static
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', blogapp.views.index, name='index'),
@@ -30,7 +31,15 @@ urlpatterns = [
     path('oauth/', blogapp.views.oauth, name='oauth'),
     path('signup/', blogapp.views.signup, name='signup'),
     path('signin/', blogapp.views.signin, name='signin'),
+
     path('survey/', blogapp.views.survey, name='survey'),
+
+    # ex: /polls/5/
+    path('survey/<int:question_id>/', blogapp.views.detail, name='detail'),
+    # ex: /polls/5/results/
+    path('survey/<int:question_id>/results/', blogapp.views.results, name='results'),
+    # ex: /polls/5/vote/
+    path('survey/<int:question_id>/vote/', blogapp.views.vote, name='vote'),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

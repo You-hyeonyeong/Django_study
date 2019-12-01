@@ -53,8 +53,16 @@ UUIDField	GUID (UUID)를 저장하는 필드
 migrate --fake ₩₩₩
 
 #### 유저모델
-- 기존의 Users 모델 사용하는 방식
+* 기존의 Users 모델 사용하는 방식
   기본 사용자 모델에서는, first name, last name, email, password, username, is_staff, is_admin 의 필드를 제공
 - 모델변형
 - auth.login 은 기본적으로 username과 password로 로그인하고 인증함 (게속 다른걸로 하다가 안되서 삽잘히고 있었음 ㅜㅜ
 )
+- 참고링크 :https://ssungkang.tistory.com/entry/Django-10-%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85%EB%A1%9C%EA%B7%B8%EC%9D%B8%EB%A1%9C%EA%B7%B8%EC%95%84%EC%9B%83-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0
+
+* user모델 커스텀 사용
+BaseUserManager 클래스 : User를 생성할때 사용하는 클래스이고 
+AbstractBaseUser 클래스 : 상속받아 생성하는 클래스이다.
+- 참고링크 :    https://coninggu.com/django-v2.2-3-%EC%9C%A0%EC%A0%80-%EB%AA%A8%EB%8D%B8-%EC%BB%A4%EC%8A%A4%ED%85%80%ED%95%98%EA%B8%B0/
+            https://dev-yakuza.github.io/ko/django/custom-user-model/
+             https://agent-night.tistory.com/4?category=648941

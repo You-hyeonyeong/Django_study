@@ -4,11 +4,20 @@
     <list default="true" id="c8b22c04-d736-45cc-a591-ee83ef00d855" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogapp/static/css/signin.css" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/static/css/signin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogapp/templates/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/templates/signin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/migrations/0002_auto_20191124_1424.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/migrations/0003_auto_20191125_0056.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/migrations/0004_auto_20191125_0106.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/migrations/0005_comment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/migrations/0006_delete_comment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/migrations/0007_comment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/templates/survey.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/templates/survey.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/firststudy/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/firststudy/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/signin.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/signin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firststudy/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/firststudy/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +138,7 @@
       <workItem from="1574995795982" duration="365000" />
       <workItem from="1574996163297" duration="6540000" />
       <workItem from="1575179671477" duration="588000" />
-      <workItem from="1575180299075" duration="3727000" />
+      <workItem from="1575180299075" duration="10093000" />
     </task>
     <servers />
   </component>
