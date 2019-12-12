@@ -2,22 +2,95 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8b22c04-d736-45cc-a591-ee83ef00d855" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/polls/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/polls/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/polls/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/polls/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/polls/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/polls/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/polls/templates/polls/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/polls/templates/polls/result.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/polls/templates/polls/survey.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/polls/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/polls/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogapp/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogapp/migrations/0002_auto_20191124_1424.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogapp/migrations/0003_auto_20191125_0056.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogapp/migrations/0004_auto_20191125_0106.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogapp/migrations/0005_comment.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogapp/migrations/0006_delete_comment.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogapp/migrations/0007_comment.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/blogapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogapp/templates/survey.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/templates/survey.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/templates/blogMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/templates/blogapp/blogMain.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/templates/complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/templates/blogapp/complete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/templates/createBlog.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/templates/blogapp/createBlog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/templates/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/templates/blogapp/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/templates/blogapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/templates/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/templates/blogapp/signin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/templates/blogapp/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogapp/templates/survey.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/blogapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogapp/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/firststudy/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/firststudy/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firststudy/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/firststudy/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/firststudy/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/firststudy/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firststudy/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/firststudy/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/select2.full.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/select2.full.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor-init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/ckeditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/ckeditor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/autoembed/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/autoembed/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/mathjax/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/mathjax/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/dialogs/uicolor.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/dialogs/uicolor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/af.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/af.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/ar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/bg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/ca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/cs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/cy.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/cy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/da.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/da.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/de.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/el.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/el.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/en-gb.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/en-gb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/eo.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/eo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/et.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/et.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/eu.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/eu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/fa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/fi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/fr-ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/fr-ca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/gl.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/gl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/he.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/he.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/hr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/hu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/id.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/id.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/it.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/ja.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/km.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/km.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/ko.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/ku.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/ku.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/lv.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/lv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/mk.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/mk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/nb.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/nb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/nl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/no.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/no.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/pt-br.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/pt-br.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/pt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/si.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/si.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/sk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/sl.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/sl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/sq.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/sq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/sv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/tr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/tt.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/tt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/ug.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/ug.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/uk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/vi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/zh-cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/zh-cn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/zh.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/zh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uploadimage/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uploadimage/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/wsc/dialogs/wsc.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/wsc/dialogs/wsc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/galleriffic/js/jush.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/galleriffic/js/jush.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +109,12 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
@@ -45,8 +123,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -73,6 +151,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/blogapp/templates/blogapp" />
+      <recent name="$PROJECT_DIR$/polls/templates/polls" />
+      <recent name="$PROJECT_DIR$/polls/templates" />
+      <recent name="$PROJECT_DIR$/firststudy/templates" />
       <recent name="$PROJECT_DIR$/blogapp" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -138,7 +220,14 @@
       <workItem from="1574995795982" duration="365000" />
       <workItem from="1574996163297" duration="6540000" />
       <workItem from="1575179671477" duration="588000" />
-      <workItem from="1575180299075" duration="10093000" />
+      <workItem from="1575180299075" duration="16986000" />
+      <workItem from="1575963516998" duration="950000" />
+      <workItem from="1575966390374" duration="581000" />
+      <workItem from="1575996538710" duration="8437000" />
+      <workItem from="1576131613563" duration="150000" />
+      <workItem from="1576131774195" duration="203000" />
+      <workItem from="1576131987726" duration="4132000" />
+      <workItem from="1576136405220" duration="7032000" />
     </task>
     <servers />
   </component>

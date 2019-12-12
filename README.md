@@ -66,3 +66,11 @@ AbstractBaseUser 클래스 : 상속받아 생성하는 클래스이다.
 - 참고링크 :    https://coninggu.com/django-v2.2-3-%EC%9C%A0%EC%A0%80-%EB%AA%A8%EB%8D%B8-%EC%BB%A4%EC%8A%A4%ED%85%80%ED%95%98%EA%B8%B0/
             https://dev-yakuza.github.io/ko/django/custom-user-model/
              https://agent-night.tistory.com/4?category=648941
+             
+* url() argument: regex
+* url() argument: view
+장고가 regular expression 일치하는 문자열을 찾으면, url() 에 인수로 전달된 특정 view 함수를 실행한다. 이때 HttpRequest 오브젝트를 첫번째 인수로, regular expression으로 캡쳐한 값을 두번째 인수로 전달 합니다. 만약에 네임드 캡쳐를 사용했다면 캡쳐된 값은 키워드 인수로 전달 합니다. 
+* url() argument: kwargs
+임위로 만들어진 키워드 인수는 파이썬 사전으로 타겟 뷰로 전달 될 수 있습니다. 이 강의에서는 이 기능을 사용하지 않겠습니다.
+url() argument: name
+URL에 이름을 지정하면 장고 앱 어딘가에서 특히 템플릿과 같은 파일에서 참조가 가능합니다. 이 강력한 기능을 사용하면 파일 하나만 수정하여 앱 전체의 글로벌 적용을 할 수가 있습니다.

@@ -1,5 +1,5 @@
 """
-WSGI config for firststudy project.
+WSGI firststudy for firststudy project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 

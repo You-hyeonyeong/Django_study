@@ -1,21 +1,20 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .forms import CreateBlog
-from .models import Blog, Comment, Question
+from .models import Blog, Comment
 from .forms import BlogCommentForm
 from django.contrib.auth.models import User #User 모델을 사용하기위해 선언해준다.
 from django.contrib import auth
-from django.http import HttpResponse
-from django.template import loader
+
 
 
 
 # Create your views here.
 def index(request):
-    return render(request, 'index.html')
+    return render(request, 'blogapp/index.html')
 
 
 def blogMain(request):
-    return render(request, 'blogMain.html')
+    return render(request, 'blogapp/blogMain.html')
 
 
 def createBlog(request):
@@ -30,12 +29,12 @@ def createBlog(request):
     else:
         form = CreateBlog()
         # 세번째인자 [context]를 보내는 것이며, 딕셔너리 자료형의 형태임
-        return render(request, 'createBlog.html', {'form': form})
+        return render(request, 'blogapp/createBlog.html', {'form': form})
 
 
 def blogMain(request):
     blogs = Blog.objects.all()  # 저장된 객체를 모 가리키는 객체 'blogs'를 만듬
-    return render(request, 'blogMain.html', {'blogs': blogs})
+    return render(request, 'blogapp/blogMain.html', {'blogs': blogs})
 
 
 def detail(request, blog_id):
@@ -72,7 +71,7 @@ def detail(request, blog_id):
             'comment_form': comment_form
         }
 
-        return render(request, 'detail.html', context)
+        return render(request, 'blogapp/detail.html', context)
 
 
 def oauth(request):
@@ -87,7 +86,7 @@ def signup(request):
             email=request.POST["email"], password=request.POST["password"], username=request.POST["username"])
         auth.login(request, user)
         return redirect('blogMain')
-    return render(request, 'signup.html')
+    return render(request, 'blogapp/signup.html')
 
 
 def signin(request):
@@ -102,30 +101,16 @@ def signin(request):
             return redirect('blogMain')
         else:
             print("ddddd")
-            return render(request, 'signin.html', {'error' : '올바르지 않은 이름 패스워드입니다.'})
+            return render(request, 'blogapp/signin.html', {'error' : '올바르지 않은 이름 패스워드입니다.'})
     else:
-        return render(request, 'signin.html')
+        return render(request, 'blogapp/signin.html')
 
 
-def survey(request):
-    #latest_question_list = Question.objects.order_by('-pub_date')[:5]
-    #output = ', '.join([q.question_text for q in latest_question_list])
-    return render(request, 'survey.html')
+# def survey(request):
+#     #latest_question_list = Question.objects.order_by('-pub_date')[:5]
+#     #output = ', '.join([q.question_text for q in latest_question_list])
+#     return render(request, '../polls/templates/survey.html')
 
 def complete(request):
-    return render(request, 'complete.html')
+    return render(request, 'blogapp/complete.html')
 
-def detail(request, question_id):
-    try:
-        question = Question.objects.get(pk=question_id)
-    except Question.DoesNotExist:
-        raise get_object_or_404("Question does not exist")
-    return render(request, 'detail.html', {'question': question})
-    return HttpResponse("You're looking at question %s." % question_id)
-
-def results(request, question_id):
-    response = "You're looking at the results of question %s."
-    return HttpResponse(response % question_id)
-
-def vote(request, question_id):
-    return HttpResponse("You're voting on question %s." % question_id)

@@ -48,7 +48,7 @@
         for (var j=0; j<ext.length; ++j) {
           CKEDITOR.plugins.addExternal(ext[j][0], ext[j][1], ext[j][2]);
         }
-        CKEDITOR.replace(t.id, JSON.parse(t.getAttribute('data-config')));
+        CKEDITOR.replace(t.id, JSON.parse(t.getAttribute('data-firststudy')));
       }
     }
   }
